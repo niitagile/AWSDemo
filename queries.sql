@@ -205,3 +205,15 @@ RANK () OVER (ORDER BY Name) AS Rank_no
 FROM demo_name;
 
 select * from stud_grade;
+
+
+
+SELECT empno, ename, job,
+CASE
+    WHEN job='salesman' THEN 'ST_MAN'
+    WHEN job='Manager' THEN 'ST_MGR'
+    ELSE 'ST_Others'
+END "Job_id"
+FROM emp;
+
+select * from emp;
